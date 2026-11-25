@@ -1,11 +1,10 @@
 use std::io;
 
 fn main() {
-    println!("{:>28}","Fahrenheit To Celsius");
+    println!("{:>28}", "Fahrenheit To Celsius");
     println!("");
 
-    loop{
-
+    loop {
         println!("Please enter Fahrenheit: ");
 
         let mut temperature: String = String::new();
@@ -24,14 +23,9 @@ fn main() {
 
         println!("Celsius: {:.2} C", fahrenheit_to_celsius(temperature));
         break;
-
-
     }
-    
 }
 
 fn fahrenheit_to_celsius(f: f64) -> f64 {
-
-    (f - 32.0) * 5.0/9.0
-
+    (f - 32.0) * 5.0 / 9.0
 }
